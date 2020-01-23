@@ -20,7 +20,7 @@ Rouge : #FC444A
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    background-color: #E1EBF5;
+    background-color: #293540;
 }
 .wrapper {
     width: 1300px;
@@ -36,11 +36,25 @@ ul{
     list-style: none;
 }
 
+.clear{
+    clear: both;
+}
+
+h4{
+    color: #293540;
+    border-bottom: 1px solid #293540;
+    padding-bottom: 5px;
+    width: 150px;
+    text-align: center;
+}
+
 /* --------------------------------------------------------------------------------------------------- HEADER --------------------------------------------------------------------------------------------------- */ 
 
 header{
     height: 150px;
     background-color: #293540;
+    border-bottom: 3px solid #FFF;
+    margin-bottom: 30px;
 }
 
 header .free{
@@ -61,18 +75,113 @@ header nav{
 
 header nav a{
     color: #FFFFFF ;
-    margin-right: 15px;
+    margin-right: 40px;
     
 }
 
 header nav ul li {
     display: inline-block;
     text-transform: uppercase;
-    padding: 5px 10px 10px 0;
+    padding: 10px 10px 10px 10px;
 }
 
 header a:hover{
     background-color: #009C84;
     border-radius: 3px;
     color: #FFFFFF;
+    padding: 10px 0 10px 0;
+}
+
+
+/* --------------------------------------------------------------------------------------------------- Banniere --------------------------------------------------------------------------------------------------- */ 
+
+.bannierejs{
+    background-color:#FFFFFF;
+    text-align: center;
+    padding: 25%;
+}
+
+/* --------------------------------------------------------------------------------------------------- Feedback --------------------------------------------------------------------------------------------------- */ 
+
+#feedback{
+    padding: 20px 0;
+}
+#feedback .wrapper{
+    padding: 60px 0;
+    background-color: #009C84;
+    border-radius: 10px;
+}
+
+#feedback article{
+    width: 460px;
+    height: 270px;
+    float: left;
+    border: 3px solid #293540;
+}
+
+#feedback h1{
+    width: 400px;
+    margin: 0 auto 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 3px solid #293540;
+    color: #293540;
+    text-transform: uppercase;
+    font-family: 'Bangers', Arial, Helvetica, sans-serif;
+}
+
+.avis1{
+    background-image: url(image/avis1.jpeg);
+    border-radius: 10px;
+    margin: 15px 30px 15px 160px;
+}
+.avis2{
+    background-image: url(image/avis2.jpeg);
+    border-radius: 10px;
+    margin: 15px 30px 15px 10px;
+}
+.avis3{
+    background-image: url(image/avis3.jpeg);
+    border-radius: 10px;
+    margin: 15px 30px 15px 160px;
+}
+.avis4{
+    background-image: url(image/avis4.jpeg);
+    border-radius: 10px;
+    margin: 15px 30px 15px 10px;
+}
+.avis5{
+    background-image: url(image/avis5.jpeg);
+    border-radius: 10px;
+    margin: 15px 30px 15px 160px;
+}
+.avis6{
+    background-image: url(image/avis6.jpeg);
+    border-radius: 10px;
+    margin: 15px 30px 15px 10px;
+}
+.avis7{
+    background-image: url(image/avis7.jpeg);
+    border-radius: 10px;
+    margin: 15px 30px 15px 160px;
+}
+.avis8{
+    background-image: url(image/avis8.jpeg);
+    border-radius: 10px;
+    margin: 15px 30px 15px 10px;
+}
+
+.overlay{
+    background: rgba(255, 255, 255, 0.6);
+    height: 100%;
+    width: 190px;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#feedback p{
+    text-align: center;
+    margin-top: 20px;
 }
