@@ -185,3 +185,23 @@ header a:hover{
     text-align: center;
     margin-top: 20px;
 }
+
+
+/* --------------------------------------------------------------------------------------------------- Footer --------------------------------------------------------------------------------------------------- */ 
+
+footer{
+    height: 260px;
+}
+footer h1{
+    text-align: center;
+    font-family: 'Bangers', Arial, Helvetica, sans-serif;
+    padding-top: 80px;
+    color: #FC444A;
+}
+
+.copyright{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    color: #E1EBF5;
+}
