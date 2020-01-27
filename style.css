@@ -254,4 +254,51 @@ margin-top: 20px;
 
 .bann{
     background: url(image/bannn.jpeg);
+    margin-top: 10px;
+}
+
+/* --------------------------------------------------------------------------------------------------- Formulaire --------------------------------------------------------------------------------------------------- */ 
+
+.wrapper3 {
+    width: 800px;
+    height: 600px;
+    margin: 50px auto;
+    padding: 0px auto ;
+    background-color: #293540;
+    border-radius: 30px;
+    border : 5px solid #FFF; 
+}
+
+.wrapper3 h1{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+.space{
+    border-top: 2px solid #ffffff;
+    width: 400px;
+    text-align: center;
+    margin: 35px auto;
+}
+
+.formulaire{
+    width: 500px;
+    margin: 90px auto;
+    color: #ffffff;
+    text-align: center;
+}
+
+.btnsubmit{
+    margin: 50px;
+    background-color: #009C84;
+    border: 1px solid #ffffff;
+}
+
+.btnsubmit:hover{
+    background-color: #FC444A;
+    border: 1px solid #ffffff;
+}
+.passwordforget{
+    text-decoration: none;
 }
