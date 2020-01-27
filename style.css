@@ -10,13 +10,15 @@ Gris : #E1EBF5
 Blanc : #FFFFFF
 Rouge : #FC444A
 
-*/ 
+*/
 
 /* --------------------------------------------------------------------------------------------------- Générale --------------------------------------------------------------------------------------------------- */ 
+
 * {
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -216,3 +218,40 @@ footer h1{
     color: #E1EBF5;
 }
 
+/* --------------------------------------------------------------------------------------------------- Smarpthone --------------------------------------------------------------------------------------------------- */ 
+
+.smartphone{
+margin-top: 20px;
+}
+
+.superpose{
+    margin-right: 100px;
+    margin-bottom: 5px;
+}
+
+.superpose2{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.iphone{
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
+    width: 300px;
+    margin: 0 38% 20px ;
+}
+
+.android{
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
+    width: 300px;
+    margin: 20px 38% 20px ;
+}
+
+.bann{
+    background: url(image/bannn.jpeg);
+}
