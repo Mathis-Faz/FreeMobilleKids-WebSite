@@ -27,8 +27,18 @@ body{
     margin: 0px auto;
     padding: 0px 10px;
 }
+.wrapper2 {
+    width: 1600px;
+    /*height: 600px;*/
+    margin: 0px auto;
+    padding: 0px 10px;
+}
 
 a{
+    text-decoration: none;
+}
+
+a:hover{
     text-decoration: none;
 }
 
@@ -54,7 +64,7 @@ header{
     height: 150px;
     background-color: #293540;
     border-bottom: 3px solid #FFF;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 
 header .free{
