@@ -1,0 +1,26 @@
+PPE 3 :
+
+	après la réussite du lancement du site vitrine qui à accompagné la communicationautour de la nouvelle idée de l'entreprise, celle-ci décide
+	d'investir dans un site dynamique avec une base de données :
+	
+	Le site devra fournir les fonctionnalités suivantes:
+		1- un espace membre sécurisé
+		2- la gestion et l'administration des données des données de la base de données
+		3- un espace utilisateur qui utilise les services offerts par le site
+		4- un espace de news 
+		5- un espece de contact 
+	
+	Conditions :
+		-réaliser une base de données avec au moins dix tables
+		-utilisation de bootstrap
+		-programmation orientée objet en PHP avec le modèle MVC
+		-accès à la base de données avec la classe PDO
+		-intégration d'un API google (en JSP ou PHP) calendrier, agenda, géolocalistaion de services, etc...
+	
+	Documentation livrables : comme d'hab (user ,technique, incidents, étude financière, étude juridique)
+		
+		-faire l'étude juridique sur les mentions légales, La CNIL, etc...
+		-faire l'étude financière (développement, maintenance, référencement, etc..)
+		-référencement : mots google, etc
+		
+	Date de présentation en groupe pendant la semaine d'examents du 11 juin.
