@@ -12,15 +12,15 @@
     <body> 
         <header>
             <div class="wrapper">
-                <a href="index.html"><p class="free">FREE Mobile Kid</p></a>
+                <a href="index.php"><p class="free">FREE Mobile Kid</p></a>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Accueil</li></a>
+                        <li><a href="index.php">Accueil</li></a>
                         <li><a href="forfait.html">Forfait</a></li>
                         <li><a href="telephone.html">Téléphone</a></li>
                         <li><a href="eabonne.html">Espace membre</a></li>
                         <li><a href="sclient.html">Service client</a></li>
-                        <li><a href="login_form.html">login</a></li>
+                        <li><a href="login_form.php">login</a></li>
                     </ul>
                 </nav>
             </div>

@@ -1,59 +1,69 @@
 <?php 
-session_start();
+
+$bdd = new PDO('mysql:host=localhost:8889;dbname=login_system', 'root', 'root');
+
+if(isset($_POST['form_connexion'])){
+  $identifiant = htmlspecialchars($_POST['identifiant']);
+  $passwordconnect = password_hash($_POST['passwordconnect']);
+  if(!empty($identifiant) AND !empty($passwordconnect)){
+    $requser = $bdd->prepare("SELECT * FROM user WHERE identifiant = ? AND passwordconnect = ? ");
+    $requser->execute(array($identifiant,$passwordconnect));
+    $userexist = $requser->rowCount();
+    if($userexist == 1){
+      header('Location: index.php');
+    } else {
+      echo "mauvais mail ou mdp";
+    } 
+  } else {
+    echo "Veuillez remplir les informations";
+  }
+}
 ?>
 
 <!DOCTYPE html>
 
 <html>
-  <head> 
-    <meta charset="UTF-8"/>
-    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style_login.css">
-    <title> Free Mobile Kid </title>
-</head>
 
-<div class="container-fluid">
-  <div class="row no-gutter">
-    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
-    <div class="col-md-8 col-lg-6">
-      <div class="login d-flex align-items-center py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4">Connectez-vous au site Free Mobile Kid</h3>
-              <form method="POST" action="login.php"> 
-                <div class="form-label-group">
-                  <input type="email" name=email id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                  <label for="inputEmail">Identifiant</label>
-                </div>
+  <head>
+  <meta charset="UTF-8"/>
+        <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title> Connexion - Free Mobile Kid </title>
+  </head>
 
-                <div class="form-label-group">
-                  <input type="password" name=pass id="inputPassword" class="form-control" placeholder="Password" required>
-                  <label for="inputPassword">Mot de passe</label>
-                </div>
-
-                <div class="custom-control custom-checkbox mb-3">
-                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                  <label class="custom-control-label" for="customCheck1">Se souvenir du mot de passe</label>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Connection</button>
-                <div class="text-center">
-                  <a class="small" href="#">Mot de Passe oublié ?</a></div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div align="center">
+    <h1>Connexion au site freemobilekid.fr</h1>
+    <br/>
+    <br/>
+    <form action="" method="POST"> 
+      <table>
+        <tr>
+          <td align="right">
+            <label for="idenfitiant">Identifiant : </label>
+          </td>
+          <td>
+            <input type="text" placeholder="Votre identifiant" name="identifiant">
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="passwordconnect">Mot de passe : </label>
+          </td>
+          <td>
+            <input type="password" placeholder="Votre mot de passe" name="passwordconnect">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td align="center">
+            <br>
+            <input type="submit" name="form_connexion" id="connexion" value="Connexion">
+          </td>
+        </tr>
+      </table>
+    </form>
   </div>
-</div>
-
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+  <body>  </body>
 </html>
